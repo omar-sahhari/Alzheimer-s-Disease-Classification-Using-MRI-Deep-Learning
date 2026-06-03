@@ -1,216 +1,272 @@
-🧠 Advanced Machine Learning Methods for Alzheimer’s Disease Classification
-A deep learning system designed to classify Alzheimer’s Disease (AD) stages using structural MRI scans.
-The project evaluates multiple neural network architectures and introduces an optimized model for accurate and efficient AD detection.
+# 🧠 Advanced Machine Learning Methods for Alzheimer's Disease Classification
 
-🏆 3rd Place Winner – Graduation Projects Competition, College of Applied Computer Sciences, King Saud University
+> Deep Learning-based system for Alzheimer's Disease (AD) stage classification using structural MRI scans.
 
-📖 Overview
-Alzheimer’s Disease is a progressive neurodegenerative disorder and the most common cause of dementia worldwide.
-Early detection is essential, but interpreting MRI scans requires expert knowledge and may miss subtle structural changes.
+🏆 **3rd Place Winner – Graduation Projects Competition**  
+College of Applied Computer Sciences, King Saud University
 
-This project develops an AI-powered diagnostic tool that classifies MRI brain scans into four categories:
+---
 
-Non-Demented
+## 📖 Overview
 
-Very Mild Demented
+Alzheimer’s Disease (AD) is a progressive neurodegenerative disorder and the leading cause of dementia worldwide. Early diagnosis plays a crucial role in slowing disease progression and improving patient care. However, interpreting MRI scans requires significant expertise and subtle structural changes may be difficult to detect manually.
 
-Mild Demented
+This project presents an AI-powered diagnostic system that automatically classifies brain MRI scans into four Alzheimer's disease stages using deep learning techniques.
 
-Moderate Demented
+### Classification Categories
 
-The system uses deep learning to extract meaningful spatial and textural features from MRI images.
+- 🟢 Non-Demented
+- 🟡 Very Mild Demented
+- 🟠 Mild Demented
+- 🔴 Moderate Demented
 
-🎯 Objectives
-Build an AI-based system for Alzheimer’s Disease classification
+The proposed system leverages advanced convolutional neural networks and transfer learning techniques to extract meaningful spatial and textural features from MRI images.
 
-Use MRI scans as a non-invasive diagnostic tool
+---
 
-Compare multiple deep learning architectures
+## 🎯 Project Objectives
 
-Improve accuracy using transfer learning and data augmentation
+- Develop an AI-based Alzheimer's Disease classification system.
+- Utilize MRI scans as a non-invasive diagnostic modality.
+- Evaluate and compare multiple deep learning architectures.
+- Improve performance through transfer learning and data augmentation.
+- Deploy the final model through an interactive web application.
 
-Deploy the model through an interactive web interface
+---
 
-🧱 Model Development Pipeline
-Phase 1 — SimpleMLP
-A basic fully connected network used as a baseline.
-Accuracy: 83%
+# 🧱 Model Development Pipeline
 
-Phase 2 — ResNet‑18
-A transfer learning approach using a pre-trained CNN.
-Accuracy: 94%
+## Phase 1 — SimpleMLP
 
-Phase 3 — EfficientNet‑B0 (Final Model)
-Lightweight, efficient, and highest-performing model.
-Accuracy (Dataset 1): 99.75%
-Accuracy (Dataset 2): 97.77%
+A fully connected neural network used as a baseline model.
 
-🧪 Datasets
-Dataset 1 — Kaggle MRI Dataset
-Class	Images
-Non-Demented	9,600
-Very Mild Demented	8,960
-Mild Demented	8,960
-Moderate Demented	6,464
-Total	33,984
+| Metric | Value |
+|----------|----------|
+| Accuracy | 83% |
 
+---
 
-After balancing: 38,400 images
+## Phase 2 — ResNet-18
 
-Dataset 2 — Mendeley MRI Dataset
-Class	Images
-Non-Demented	3,200
-Very Mild Demented	2,240
-Mild Demented	896
-Moderate Demented	64
-Total	6,400
+Transfer learning approach using a pre-trained ResNet-18 architecture.
 
+| Metric | Value |
+|----------|----------|
+| Accuracy | 94% |
 
-Used to test generalization across datasets.
+---
 
-⚙️ Technologies Used
-Programming
-Python
+## Phase 3 — EfficientNet-B0 (Final Model)
 
-Deep Learning
-PyTorch
+EfficientNet-B0 achieved the highest performance while maintaining computational efficiency.
 
-Torchvision
+| Dataset | Accuracy |
+|----------|----------|
+| Dataset 1 | 99.75% |
+| Dataset 2 | 97.77% |
 
-Data Processing
-NumPy
+---
 
-Pandas
+# 🧪 Datasets
 
-OpenCV
+## Dataset 1 — Kaggle MRI Dataset
 
-Visualization
-Matplotlib
+| Class | Images |
+|---------|---------:|
+| Non-Demented | 9,600 |
+| Very Mild Demented | 8,960 |
+| Mild Demented | 8,960 |
+| Moderate Demented | 6,464 |
+| **Total** | **33,984** |
 
-Deployment
-Gradio
+### Data Balancing
 
-Hugging Face Spaces
+After augmentation and balancing:
 
-Environment
-Jupyter Notebook
+**Total Images = 38,400**
 
-Git / GitHub
+---
 
-🧠 Model Configuration (EfficientNet‑B0)
-Optimizer: AdamW
+## Dataset 2 — Mendeley MRI Dataset
 
-Learning Rate: 3e‑4
+| Class | Images |
+|---------|---------:|
+| Non-Demented | 3,200 |
+| Very Mild Demented | 2,240 |
+| Mild Demented | 896 |
+| Moderate Demented | 64 |
+| **Total** | **6,400** |
 
-Weight Decay: 1e‑3
+Used exclusively to evaluate model generalization across different datasets.
 
-Loss Function: CrossEntropyLoss
+---
 
-Input Size: 224×224
+# ⚙️ Technologies Used
 
-Epochs: 5
+## Programming Language
 
-Batch Size: 64
+- Python
 
-Preprocessing
-Resize images to 224×224
+## Deep Learning
 
-Convert grayscale → RGB
+- PyTorch
+- Torchvision
 
-Normalize using ImageNet statistics
+## Data Processing
 
-Shuffle dataset
+- NumPy
+- Pandas
+- OpenCV
 
-Train/test split with seed = 42
+## Visualization
 
-📊 Results
-Dataset 1
-Model	Accuracy
-SimpleMLP	83%
-ResNet‑18	94%
-EfficientNet‑B0	99.75%
+- Matplotlib
 
+## Deployment
 
-Dataset 2
-Model	Accuracy
-EfficientNet‑B0	97.77%
+- Gradio
+- Hugging Face Spaces
 
+## Development Environment
 
-🏆 Comparison with Previous Work
-Model	Accuracy
-ALZENET	97.31%
-SVM	89.84%
-Inception‑ResNet‑V2	79.12%
-Our EfficientNet‑B0	99.75%
+- Jupyter Notebook
+- Git
+- GitHub
 
+---
 
-🌐 Deployment
-Gradio Interface
-A simple UI allowing users to upload MRI images and receive predictions instantly.
+# 🧠 EfficientNet-B0 Configuration
 
-Hugging Face Spaces
-Hosted online for public access and demonstration.
+| Parameter | Value |
+|------------|------------|
+| Optimizer | AdamW |
+| Learning Rate | 3e-4 |
+| Weight Decay | 1e-3 |
+| Loss Function | CrossEntropyLoss |
+| Input Size | 224 × 224 |
+| Epochs | 5 |
+| Batch Size | 64 |
 
-🔗 Demo:  
-https://huggingface.co/spaces/Yousef20/alzheimer-mri-detection
+### Preprocessing Pipeline
 
-🚀 Installation
-bash
+- Resize images to 224 × 224
+- Convert grayscale images to RGB
+- Normalize using ImageNet statistics
+- Shuffle dataset
+- Train/Test split using `seed = 42`
+
+---
+
+# 📊 Results
+
+## Dataset 1 Performance
+
+| Model | Accuracy |
+|---------|---------:|
+| SimpleMLP | 83.00% |
+| ResNet-18 | 94.00% |
+| EfficientNet-B0 | **99.75%** |
+
+---
+
+## Dataset 2 Performance
+
+| Model | Accuracy |
+|---------|---------:|
+| EfficientNet-B0 | **97.77%** |
+
+---
+
+# 🏆 Comparison with Previous Work
+
+| Model | Accuracy |
+|---------|---------:|
+| ALZENET | 97.31% |
+| SVM | 89.84% |
+| Inception-ResNet-V2 | 79.12% |
+| **Our EfficientNet-B0** | **99.75%** |
+
+---
+
+# 🌐 Deployment
+
+## Gradio Interface
+
+A user-friendly web interface allowing users to upload MRI scans and receive instant predictions.
+
+## Hugging Face Spaces
+
+Online deployment for public access and demonstration.
+
+### 🔗 Live Demo
+
+**https://huggingface.co/spaces/Yousef20/alzheimer-mri-detection**
+
+---
+
+# 🚀 Installation
+
+```bash
 git clone https://github.com/yourusername/alzheimer-mri-classification.git
+
 cd alzheimer-mri-classification
+
 pip install -r requirements.txt
+
 python app.py
-📂 Project Structure
-كتابة تعليمات برمجية
+```
+
+---
+
+# 📂 Project Structure
+
+```text
 Alzheimer-MRI-Classification/
 │
-├── app.py
-├── train.py
-├── predict.py
-├── requirements.txt
 ├── README.md
-│
-├── models/
-│   └── efficientnet_b0.pth
-│
+├── Final_Report.pdf
 ├── notebooks/
-│   └── experiments.ipynb
-│
-├── images/
-│   ├── confusion_matrix.png
-│   ├── accuracy_curve.png
-│   └── demo.png
-│
-├── docs/
-│   └── Final_Report.pdf
-│
-└── dataset/
-🔮 Future Work
-Multi-modal learning (MRI + PET)
+├── models/
+└── images/
+```
 
-Longitudinal patient progression prediction
+---
 
-Explainable AI (Grad‑CAM, SHAP)
+# 🔮 Future Work
 
-Larger multi-center datasets
+- Multi-modal learning (MRI + PET)
+- Longitudinal patient progression prediction
+- Explainable AI techniques (Grad-CAM, SHAP)
+- Training on larger multi-center datasets
+- Integration into clinical workflows
+- Optimization for mobile and edge devices
 
-Clinical workflow integration
+---
 
-Model optimization for mobile/edge devices
+# 👨‍💻 Team Members
 
-👨‍💻 Team Members
-Talal Alshehri
+- Talal Alshehri
+- Yousef Alabri
+- Omar Sahhari
+- Osama Raed
 
-Yousef Alabri
+### Academic Supervisor
 
-Omar Sahhari
+**Prof. Mohamad Mahmoud Al Rahhal**
 
-Osama Raed
+College of Applied Computer Sciences  
+King Saud University
 
-Supervisor:  
-Prof. Mohamad Mahmoud Al Rahhal
-College of Applied Computer Sciences — King Saud University
+---
 
-📜 License
-Academic and research use only.
-Reuse is allowed with proper attribution.
+# 📜 License
+
+This project is intended for academic and research purposes only.
+
+Reuse and modification are permitted with proper attribution to the original authors.
+
+---
+
+## ⭐ Citation
+
+If you use this work in your research, projects, or publications, please consider citing the repository and acknowledging the authors.
