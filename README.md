@@ -204,17 +204,6 @@ Online deployment for public access and demonstration.
 
 ---
 
-# 🚀 Installation
-
-```bash
-git clone https://github.com/yourusername/alzheimer-mri-classification.git
-
-cd alzheimer-mri-classification
-
-pip install -r requirements.txt
-
-python app.py
-```
 
 ---
 
@@ -225,8 +214,8 @@ Alzheimer-MRI-Classification/
 │
 ├── README.md
 ├── Final_Report.pdf
-├── notebooks/
-├── models/
+├── notebook/
+├── model/
 └── images/
 ```
 
