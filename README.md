@@ -128,3 +128,29 @@ https://huggingface.co/spaces/Yousef20/alzheimer-mri-detection
 ---
 
 ## 📦 Repository Structure
+
+
+---
+
+## 🔮 Future Work
+- Add PET/fMRI multimodal inputs  
+- Longitudinal progression prediction  
+- Explainability (Grad‑CAM, SHAP)  
+- Lightweight model quantization  
+- Clinical workflow integration  
+
+---
+
+## 👥 Authors
+- Yousef Alabri  
+- Talal Alshehri  
+- Omar Sahhari  
+- Osama Raed  
+
+Supervised by: **Prof. Mohamad Al Rahhal**
+
+---
+
+## 📄 License
+MIT License
+
