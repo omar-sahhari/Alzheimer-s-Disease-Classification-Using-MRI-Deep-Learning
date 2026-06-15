@@ -186,6 +186,9 @@ Used exclusively to evaluate model generalization across different datasets.
 | Inception-ResNet-V2 | 79.12% |
 | **Our EfficientNet-B0** | **99.75%** |
 
+
+![Confusion-matrix](Confusion-matrix.png)
+
 ---
 
 # 🌐 Deployment
@@ -197,9 +200,10 @@ A user-friendly web interface allowing users to upload MRI scans and receive ins
 ## Hugging Face Spaces
 
 Online deployment for public access and demonstration.
+![Interface](demo.png)
 
 ### 🔗 Live Demo
-
+![result](result.png)
 **https://huggingface.co/spaces/Yousef20/alzheimer-mri-detection**
 
 ---
@@ -246,16 +250,5 @@ Alzheimer-MRI-Classification/
 College of Applied Computer Sciences  
 King Saud University
 
----
 
-# 📜 License
 
-This project is intended for academic and research purposes only.
-
-Reuse and modification are permitted with proper attribution to the original authors.
-
----
-
-## ⭐ Citation
-
-If you use this work in your research, projects, or publications, please consider citing the repository and acknowledging the authors.
