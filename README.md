@@ -187,7 +187,7 @@ Used exclusively to evaluate model generalization across different datasets.
 | **Our EfficientNet-B0** | **99.75%** |
 
 
-![Confusion-matrix](Confusion-matrix.png)
+![Confusion-matrix](imags/Confusion-matrix.png)
 
 ---
 
@@ -200,10 +200,12 @@ A user-friendly web interface allowing users to upload MRI scans and receive ins
 ## Hugging Face Spaces
 
 Online deployment for public access and demonstration.
-![Interface](demo.png)
+![Interface](imags/demo.png)
 
 ### 🔗 Live Demo
-![result](result.png)
+![result](imags/result.png)
+
+
 **https://huggingface.co/spaces/Yousef20/alzheimer-mri-detection**
 
 ---
